@@ -1,0 +1,27 @@
+h1{
+  font-family: var(--font-heading);
+  font-size: var(--fs-5xl);
+  color: var(--color-primary);
+}
+
+.test-card{
+  width: 320px;
+
+  padding: var(--space-6);
+
+  margin-top: var(--space-8);
+
+  background: var(--color-white);
+
+  border: 1px solid var(--border-light);
+
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-md);
+
+  transition: all .3s ease;
+}
+
+.test-card:hover{
+  transform: translateY(-4px);
+}

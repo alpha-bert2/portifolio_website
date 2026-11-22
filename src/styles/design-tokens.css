@@ -1,0 +1,100 @@
+/* colors.css */
+
+:root {
+  /* Brand */
+  --color-primary: #0A39FF;
+  --color-secondary: #008DFF;
+  --color-accent: #18D5FF;
+
+  /* Neutral */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  /* Grays */
+  --color-gray-50: #F8FAFC;
+  --color-gray-100: #F1F5F9;
+  --color-gray-200: #E2E8F0;
+  --color-gray-300: #CBD5E1;
+  --color-gray-500: #64748B;
+  --color-gray-700: #334155;
+  --color-gray-900: #0F172A;
+}
+
+:root{
+  --bg-primary:#FFFFFF;
+  --bg-secondary:#F8FAFC;
+
+  --text-primary:#000000;
+  --text-secondary:#64748B;
+
+  --border-light:#E2E8F0;
+}
+
+/* spacing.css */
+
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+}
+
+/* typography.css */
+
+:root {
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+  --fs-2xl: 1.5rem;
+  --fs-3xl: 2rem;
+  --fs-4xl: 3rem;
+  --fs-5xl: 4rem;
+  --fs-6xl: 5rem;
+}
+
+/*borders*/
+:root {
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+}
+
+/*shadows*/
+:root {
+  --shadow-sm: 0 4px 12px rgba(0,0,0,.05);
+
+  --shadow-md: 0 8px 24px rgba(0,0,0,.08);
+
+  --shadow-lg: 0 16px 40px rgba(0,0,0,.1);
+}
+
+/*gradient*/
+:root {
+  --gradient-primary:
+    linear-gradient(
+      135deg,
+      #0A39FF 0%,
+      #008DFF 100%
+    );
+
+  --gradient-accent:
+    linear-gradient(
+      135deg,
+      #008DFF 0%,
+      #18D5FF 100%
+    );
+}
