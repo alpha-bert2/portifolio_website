@@ -1,15 +1,16 @@
 import "./App.css"
+import Navbar from "./components/navbar/navBar";
+import LOGO from "./assets/logo.png"
 function App(){
   return(
-    <section className="section">
+    <>
+      <Navbar/>
+      <section className="section">
         <div className="container">
-          <h1>Phori Tech</h1>
-          <p>Design system is working.</p>
+          <h1>Hero Section Coming Soon 🚀</h1>
         </div>
-        <div className="test-card">
-          Design System Ready 🚀
-        </div>
-    </section>
+      </section>
+    </>
   )
 }
 export default App;
