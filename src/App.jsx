@@ -136,12 +136,34 @@ function ProjectPreview({ type }) {
 }
 
 function ProjectCard({ project }) {
+  const previewClassName = `project-preview project-preview-${project.type}`;
+  const previewContent = (
+    <>
+      <ProjectPreview type={project.type} />
+      <span className="project-status">{project.status}</span>
+      {project.demoUrl && (
+        <span className="project-preview-cta">
+          Open live app <ExternalLink size={13} aria-hidden="true" />
+        </span>
+      )}
+    </>
+  );
+
   return (
     <article className="project-card">
-      <div className={`project-preview project-preview-${project.type}`}>
-        <ProjectPreview type={project.type} />
-        <span className="project-status">{project.status}</span>
-      </div>
+      {project.demoUrl ? (
+        <a
+          className={`${previewClassName} project-preview-link`}
+          href={project.demoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Open ${project.name} live app`}
+        >
+          {previewContent}
+        </a>
+      ) : (
+        <div className={previewClassName}>{previewContent}</div>
+      )}
       <div className="project-details">
         <div className="project-heading">
           <div>
